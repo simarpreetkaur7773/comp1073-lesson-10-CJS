@@ -6,7 +6,7 @@ const section = document.querySelector("section");
 async function populate() {
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL = "http://smccrindle.github.io/comp1073module10/js/i-scream.json";
+    const requestURL = "https://smccrindle.github.io/comp1073module10/js/i-scream.json";
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -27,9 +27,9 @@ populate();
 /* STEP 9b: Build out the populateHeader() function */
 function populateHeader(jsonObj) {
     // Create the H1 element
-    let haederH1 = document.createElement("h1");
+    let headerH1 = document.createElement("h1");
     // Grab the company name from the JSON object and use it for the text node
-    haederH1.textContent = jsonObj.companyName;
+    headerH1.textContent = jsonObj.companyName;
     // Inject the complete H1 element into the DOM, inside the HEADER
     header.appendChild(headerH1);
 };
