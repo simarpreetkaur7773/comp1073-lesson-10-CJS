@@ -13,10 +13,9 @@ async function populate() {
     const response = await fetch(request);
     console.log(response);
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
-    const iScream = await response;
-    console.log(iScream);
+    const iScream = await response.json();
     // STEP 8: Output the iScream JSON object to the console 
-    
+    console.log(iScream);
     // STEP 9a: Invoke the populateHeader function here, then build it below
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
